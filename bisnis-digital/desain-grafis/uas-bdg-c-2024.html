@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UAS Desain Grafis Bisnis Digital - Unimed</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+        color: #333;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        color: white;
+        padding: 40px;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .header p {
+        font-size: 16px;
+        opacity: 0.9;
+      }
+
+      .content {
+        padding: 40px;
+      }
+
+      .info-box {
+        background: #f8f9fa;
+        border-left: 4px solid #667eea;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+      }
+
+      .info-box h3 {
+        color: #667eea;
+        margin-bottom: 10px;
+      }
+
+      .question {
+        background: #ffffff;
+        border: 2px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 30px;
+        margin-bottom: 25px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .question:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .question-number {
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 8px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+
+      .question-text {
+        line-height: 1.8;
+        color: #2c3e50;
+        font-size: 16px;
+        margin-top: 15px;
+      }
+
+      .question-text ul {
+        margin: 15px 0 15px 25px;
+      }
+
+      .question-text li {
+        margin: 10px 0;
+      }
+
+      .image-box {
+        margin: 20px 0;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .image-box img {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        pointer-events: none;
+      }
+
+      .answer-area {
+        display: none;
+      }
+
+      .watermark {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        font-size: 100px;
+        color: rgba(0, 0, 0, 0.03);
+        pointer-events: none;
+        z-index: 1;
+        font-weight: bold;
+      }
+
+      .footer {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+      }
+
+      .protection-notice {
+        background: #fff3cd;
+        border: 1px solid #ffc107;
+        color: #856404;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="watermark">UNIMED</div>
+
+    <div class="container">
+      <div class="header">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Lambang_Universitas_Negeri_Medan.png"
+          alt="Logo UNIMED"
+          style="width: 80px; height: auto; margin-bottom: 15px" />
+        <h1>UJIAN AKHIR SEMESTER</h1>
+        <p>Desain Grafis Bisnis Digital</p>
+        <p>Universitas Negeri Medan</p>
+      </div>
+
+      <div class="content">
+        <div class="protection-notice">
+          ⚠️ Dokumen ini dilindungi - Dilarang menyalin konten
+        </div>
+
+        <div class="info-box">
+          <h3>📋 Petunjuk Pengerjaan:</h3>
+          <p>✓ Baca setiap soal dengan teliti dan cermat</p>
+          <p>✓ Jawab dengan argumentasi desain yang logis dan profesional</p>
+          <p>
+            ✓ Kirimkan jawaban Anda melalui Google Form yang telah disediakan
+          </p>
+          <p>✓ Jawaban harus ditulis dengan bahasa yang baik dan sistematis</p>
+          <p>
+            ✓ Jawaban hasil pemikiran sendiri bukan kerja sama antar kelompok
+            apalagi chat gpt
+          </p>
+          <p>✓ Waktu pengerjaan: 120 menit</p>
+        </div>
+
+        <!-- Soal 1 -->
+        <div class="question">
+          <span class="question-number">SOAL 1</span>
+          <div class="question-text">
+            <p>
+              <strong
+                >Sebuah perusahaan startup teknologi ingin tampil sebagai
+                "inovatif dan ramah pengguna", namun juga ingin tetap terlihat
+                "profesional dan tepercaya".</strong
+              >
+            </p>
+            <p>
+              Sebagai desainer, bagaimana kamu menyusun strategi visual branding
+              (warna, tipografi, gaya ilustrasi, dan tata letak) agar ketiga
+              kesan tersebut muncul secara bersamaan tanpa saling bertentangan?
+            </p>
+            <p>
+              <em
+                >Jelaskan dengan argumen desain yang logis, bukan hanya pilihan
+                warna atau font.</em
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- Soal 2 -->
+        <div class="question">
+          <span class="question-number">SOAL 2</span>
+          <div class="question-text">
+            <p>
+              <strong
+                >Kamu diminta menilai dua desain poster kampanye sosial:</strong
+              >
+            </p>
+            <ul>
+              <li>
+                <strong>Poster A:</strong> Penuh warna, banyak teks, dan
+                menampilkan banyak gambar kecil.
+              </li>
+              <li>
+                <strong>Poster B:</strong> Sederhana dengan satu gambar utama
+                dan sedikit teks.
+              </li>
+            </ul>
+            <p>
+              Tanpa menilai secara subjektif, analisis efektivitas komunikasi
+              visual dari kedua poster tersebut berdasarkan teori Gestalt,
+              hirarki visual, dan prinsip emphasis.
+            </p>
+
+            <img
+              style="width: 100%"
+              src="https://sdmntprnortheu.oaiusercontent.com/files/00000000-dd18-61f4-bb44-2743ce34ec7f/raw?se=2025-10-12T13%3A07%3A02Z&sp=r&sv=2024-08-04&sr=b&scid=67db8b87-c0a5-580e-a70a-b2ecb3224e86&skoid=3cb6de21-012a-49c9-9402-a1ebf8d0bd06&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-10-12T00%3A14%3A45Z&ske=2025-10-13T00%3A14%3A45Z&sks=b&skv=2024-08-04&sig=/Dwk2BHpNWk10%2BiRW06OaAnYi7eM7dqDJEikV1xameY%3D" />
+          </div>
+        </div>
+
+        <!-- Soal 3 -->
+        <div class="question">
+          <span class="question-number">SOAL 3</span>
+          <div class="question-text">
+            <p>
+              <strong
+                >Sebuah desain logo baru menuai kritik karena dianggap "terlalu
+                minimalis hingga kehilangan identitas".</strong
+              >
+            </p>
+            <p>
+              Sebagai seorang desainer profesional, bagaimana kamu akan
+              mengevaluasi kritik tersebut secara objektif, dan langkah-langkah
+              apa yang akan kamu lakukan untuk menyeimbangkan antara
+              kesederhanaan dan karakter merek?
+            </p>
+          </div>
+        </div>
+
+        <!-- Soal 4 -->
+        <div class="question">
+          <span class="question-number">SOAL 4</span>
+          <div class="question-text">
+            <p>
+              <strong
+                >Dalam proses revisi desain, klien menambahkan banyak permintaan
+                yang menyebabkan hasil akhir kehilangan arah konsep
+                awal.</strong
+              >
+            </p>
+            <p>
+              Analisis bagaimana seorang desainer grafis profesional seharusnya
+              bersikap dalam situasi seperti ini agar tetap mempertahankan nilai
+              estetika dan fungsi desain, tanpa mengabaikan kebutuhan klien.
+            </p>
+          </div>
+        </div>
+
+        <!-- Soal 5 -->
+        <div class="question">
+          <span class="question-number">SOAL 5</span>
+          <div class="question-text">
+            <p>
+              <strong
+                >Kamu melihat tren desain di media sosial cenderung mengarah
+                pada gaya "flat minimalism".</strong
+              >
+            </p>
+            <p>
+              Sebagai desainer konseptual, bagaimana kamu menilai tren ini dalam
+              konteks keberlanjutan estetika (visual sustainability) dan
+              identitas lokal budaya Indonesia?
+            </p>
+            <p>
+              <em
+                >Apakah tren global selalu perlu diikuti, atau justru harus
+                diadaptasi? Jelaskan dengan argumentasi desain dan etika
+                profesional.</em
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>© 2025 Universitas Negeri Medan</p>
+        <p>Prodi Desain Grafis Bisnis Digital</p>
+      </div>
+    </div>
+
+    <script>
+      // Disable right-click
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+        alert("⚠️ Klik kanan dinonaktifkan pada halaman ini!");
+        return false;
+      });
+
+      // Disable common keyboard shortcuts for copying
+      document.addEventListener("keydown", function (e) {
+        // Ctrl+C, Ctrl+X, Ctrl+V, Ctrl+A, Ctrl+U, Ctrl+S, F12
+        if (
+          e.ctrlKey &&
+          (e.key === "c" ||
+            e.key === "x" ||
+            e.key === "v" ||
+            e.key === "a" ||
+            e.key === "u" ||
+            e.key === "s")
+        ) {
+          e.preventDefault();
+          alert("⚠️ Fungsi copy-paste dinonaktifkan!");
+          return false;
+        }
+        // F12 for developer tools
+        if (e.key === "F12") {
+          e.preventDefault();
+          return false;
+        }
+        // Ctrl+Shift+I for developer tools
+        if (e.ctrlKey && e.shiftKey && e.key === "I") {
+          e.preventDefault();
+          return false;
+        }
+      });
+
+      // Disable text selection on drag
+      document.addEventListener("selectstart", function (e) {
+        if (e.target.tagName !== "TEXTAREA" && e.target.tagName !== "INPUT") {
+          e.preventDefault();
+          return false;
+        }
+      });
+
+      // Prevent drag and drop of images
+      document.querySelectorAll("img").forEach((img) => {
+        img.setAttribute("draggable", "false");
+      });
+
+      // Additional protection against DevTools
+      (function () {
+        const devtools = /./;
+        devtools.toString = function () {
+          this.opened = true;
+        };
+        const checkDevTools = setInterval(function () {
+          if (devtools.opened) {
+            alert("⚠️ Developer Tools terdeteksi!");
+            window.location.reload();
+          }
+        }, 1000);
+      })();
+
+      // Disable print screen
+      document.addEventListener("keyup", function (e) {
+        if (e.key === "PrintScreen") {
+          navigator.clipboard.writeText("");
+          alert("⚠️ Screenshot dinonaktifkan!");
+        }
+      });
+    </script>
+  </body>
+</html>
