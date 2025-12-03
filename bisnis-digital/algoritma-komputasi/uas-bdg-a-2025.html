@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UAS Algoritma dan Komputasi Bisnis Digital - UNIMED</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+        color: #333;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        color: white;
+        padding: 40px;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .header p {
+        font-size: 16px;
+        opacity: 0.9;
+      }
+
+      .content {
+        padding: 40px;
+      }
+
+      .info-box {
+        background: #f8f9fa;
+        border-left: 4px solid #667eea;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+      }
+
+      .info-box h3 {
+        color: #667eea;
+        margin-bottom: 10px;
+      }
+
+      .question {
+        background: #ffffff;
+        border: 2px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 30px;
+        margin-bottom: 25px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .question:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .question-number {
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 8px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+
+      .question-text {
+        line-height: 1.8;
+        color: #2c3e50;
+        font-size: 16px;
+        margin-top: 15px;
+      }
+
+      .footer {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+      }
+
+      .protection-notice {
+        background: #fff3cd;
+        border: 1px solid #ffc107;
+        color: #856404;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: 500;
+      }
+
+      .watermark {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        font-size: 100px;
+        color: rgba(0, 0, 0, 0.03);
+        pointer-events: none;
+        z-index: 1;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="watermark">UNIMED</div>
+
+    <div class="container">
+      <div class="header">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Lambang_Universitas_Negeri_Medan.png"
+          alt="Logo UNIMED"
+          style="width: 80px; height: auto; margin-bottom: 15px" />
+        <h1>UJIAN AKHIR SEMESTER</h1>
+        <p>Mata Kuliah: Algoritma dan Komputasi Bisnis Digital</p>
+        <p>Universitas Negeri Medan</p>
+      </div>
+
+      <div class="content">
+        <div class="protection-notice">
+          ⚠️ Dokumen ini dilindungi - Dilarang menyalin konten
+        </div>
+
+        <div class="info-box">
+          <h3>📋 Petunjuk Pengerjaan:</h3>
+          <p>✓ Baca setiap soal dengan cermat</p>
+          <p>
+            ✓ Jawab secara logis dan sistematis sesuai konsep algoritma &
+            komputasi
+          </p>
+          <p>
+            ✓ Gunakan contoh kasus nyata di bidang bisnis digital jika
+            diperlukan
+          </p>
+          <p>✓ Kirimkan jawaban melalui Google Form yang disediakan</p>
+          <p>✓ Waktu pengerjaan: 90 menit</p>
+        </div>
+
+        <!-- SOAL 1 -->
+        <div class="question">
+          <span class="question-number">SOAL 1</span>
+          <div class="question-text">
+            <p>
+              Perkembangan internet dari Web 1.0 → Web 2.0 → Web 3.0 membawa
+              perubahan besar bagi bisnis digital.
+            </p>
+            <p>
+              Jelaskan bagaimana perubahan tersebut mempengaruhi strategi
+              pemasaran online, dan berikan satu contoh strategi yang hanya
+              mungkin dilakukan pada era Web 3.0.
+            </p>
+          </div>
+        </div>
+
+        <!-- SOAL 2 -->
+        <div class="question">
+          <span class="question-number">SOAL 2</span>
+          <div class="question-text">
+            <p>
+              Sebuah UMKM sering menerima pesan palsu (phishing) yang meminta
+              password admin dan data pelanggan.
+            </p>
+            <p>
+              Analisis tiga kesalahan keamanan yang mungkin dilakukan UMKM
+              tersebut, dan berikan solusi sederhana yang dapat diterapkan tanpa
+              kemampuan teknis tinggi.
+            </p>
+          </div>
+        </div>
+
+        <!-- SOAL 3 -->
+        <div class="question">
+          <span class="question-number">SOAL 3</span>
+          <div class="question-text">
+            <p>
+              Sebuah kantor kecil mengalami koneksi internet yang sangat lambat
+              meskipun pengguna sedikit.
+            </p>
+            <p>
+              Identifikasi tiga kemungkinan penyebab teknis, lalu buat algoritma
+              langkah demi langkah untuk menemukan penyebab utama secara
+              sistematis.
+            </p>
+          </div>
+        </div>
+
+        <!-- SOAL 4 -->
+        <div class="question">
+          <span class="question-number">SOAL 4</span>
+          <div class="question-text">
+            <p>
+              Sebuah startup ingin membuat aplikasi absensi sederhana dan
+              bingung apakah cukup menggunakan Google Spreadsheet atau harus
+              memakai MySQL Database.
+            </p>
+            <p>
+              Bandingkan keduanya, lalu buat alur keputusan sederhana untuk
+              menentukan kapan memakai spreadsheet dan kapan memakai database.
+            </p>
+          </div>
+        </div>
+
+        <!-- SOAL 5 -->
+        <div class="question">
+          <span class="question-number">SOAL 5</span>
+          <div class="question-text">
+            <p>
+              Seorang mahasiswa ingin membuat website portofolio dan bingung
+              memilih antara Wix (no-code), WordPress (low-code), atau
+              HTML/CSS/JS (hardcode).
+            </p>
+            <p>
+              Buat tabel perbandingan ketiga metode tersebut berdasarkan
+              kecepatan pembuatan, fleksibilitas, biaya, dan keamanan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>© 2025 Universitas Negeri Medan</p>
+        <p>Program Studi Bisnis Digital</p>
+      </div>
+    </div>
+
+    <script>
+      // Disable right-click
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+        alert("⚠️ Klik kanan dinonaktifkan pada halaman ini!");
+        return false;
+      });
+
+      // Disable copy/paste and developer tools
+      document.addEventListener("keydown", function (e) {
+        if (
+          e.ctrlKey &&
+          ["c", "x", "v", "a", "u", "s"].includes(e.key.toLowerCase())
+        ) {
+          e.preventDefault();
+          alert("⚠️ Fungsi copy-paste dinonaktifkan!");
+          return false;
+        }
+        if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+          e.preventDefault();
+          alert("⚠️ Developer Tools terdeteksi!");
+          return false;
+        }
+      });
+
+      // Disable text selection
+      document.addEventListener("selectstart", function (e) {
+        if (e.target.tagName !== "TEXTAREA" && e.target.tagName !== "INPUT") {
+          e.preventDefault();
+        }
+      });
+
+      // Disable drag images
+      document.querySelectorAll("img").forEach((img) => {
+        img.setAttribute("draggable", "false");
+      });
+
+      // Prevent PrintScreen
+      document.addEventListener("keyup", function (e) {
+        if (e.key === "PrintScreen") {
+          navigator.clipboard.writeText("");
+          alert("⚠️ Screenshot dinonaktifkan!");
+        }
+      });
+    </script>
+  </body>
+</html>
